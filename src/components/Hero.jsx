@@ -1,9 +1,8 @@
 
 const Hero = () => {
   return (
-    <>
+    <div id="home">
       <div
-        id="hero"
         className="w-full h-screen text-center flex flex-col justify-center items-center mx-auto"
         style={{
           background:
@@ -20,14 +19,14 @@ const Hero = () => {
         </div>
         <div className="flex lg:flex-row flex-col">
           <button className="bg-black mt-[3rem] lg:mr-10 my-6 mx-auto py-3 px-8 text-white hover:scale-105 duration-300 ease-in-out">
-            Services
+            <a href="#services">Services </a>
           </button>
           <button className="mt-[3rem] lg:mr-10 my-6 mx-auto py-3 px-8 text-black border-2 border-black hover:scale-105 duration-300 ease-in-out">
             SEND US A BRIEF
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

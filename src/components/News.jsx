@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
-
 function News() {
   const [articles, setArticles] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,10 +11,9 @@ function News() {
   useEffect(() => {
     async function fetchData() {
       try {
-
-        const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`;
+        const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/business/in.json`;
         const response = await axios.get(apiUrl);
-      
+
         setArticles(response.data.articles);
       } catch (error) {
         console.error("Error in fetching news:", error.message);
@@ -105,7 +103,7 @@ function News() {
               >
                 <div
                   className={`news-card p-5 mx-auto max-w-sm w-fit rounded max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
-                    index >= currentIndex && index < currentIndex + 2
+                    index >= currentIndex && index < currentIndex + 1
                       ? ""
                       : "hidden"
                   }`}
