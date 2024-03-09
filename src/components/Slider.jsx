@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {FiAlignJustify} from "react-icons/fi"
 
 const Sidebar = () => {

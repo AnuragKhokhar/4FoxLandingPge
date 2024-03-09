@@ -1,4 +1,3 @@
-import React from "react";
 
 const Hero = () => {
   return (
@@ -12,7 +11,7 @@ const Hero = () => {
         }}
       >
         <h1 className="w-fit md:text-9xl sm:text-5xl text-6xl font-extrabold select-none">
-          BUISNESS SOLUTIONS
+          BUSINESS SOLUTIONS
         </h1>
         <div className="flex justify-center items-center pr-3">
           <p className="md:text-5xl sm:text-2xl text-l font-bold py-4">

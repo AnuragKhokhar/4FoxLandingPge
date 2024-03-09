@@ -13,7 +13,7 @@ function News() {
     async function fetchData() {
       try {
 
-        const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/business/in.json`;
+        const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`;
         const response = await axios.get(apiUrl);
       
         setArticles(response.data.articles);
@@ -57,7 +57,7 @@ function News() {
                 key={index}
               >
                 <div
-                  className={`news-card p-5 mx-2 max-w-sm rounded h-96 overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
+                  className={`news-card p-5 mx-2 max-w-sm rounded h-96 w-fit overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
                     index >= currentIndex && index < currentIndex + 3
                       ? ""
                       : "hidden"
@@ -104,8 +104,8 @@ function News() {
                 key={index}
               >
                 <div
-                  className={`news-card p-5 mx-auto max-w-sm rounded max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
-                    index >= currentIndex && index < currentIndex + 1
+                  className={`news-card p-5 mx-auto max-w-sm w-fit rounded max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
+                    index >= currentIndex && index < currentIndex + 2
                       ? ""
                       : "hidden"
                   }`}
